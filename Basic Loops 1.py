@@ -1,4 +1,4 @@
-#divisible by 7 and multiple of 5
+#divisible by 7 and multiples of 5
 '''start =1500
 end = 2700
 lst = list()
