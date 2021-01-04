@@ -20,7 +20,7 @@ def rolling_dice():
     imgla.configure(image=DiceImage)
     
     imgla.image = DiceImage
-# adding button, and command will use rolling_dice function
+
 button = tkinter.Button(root, text='Roll the Dice', fg='blue', command=rolling_dice)
 
 
