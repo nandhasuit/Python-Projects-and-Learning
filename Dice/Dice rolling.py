@@ -18,7 +18,7 @@ def rolling_dice():
     diceimg = ImageTk.PhotoImage(Image.open(random.choice(dice)))
 
     imgla.configure(image=DiceImage)
-    # keep a reference
+    
     imgla.image = DiceImage
 # adding button, and command will use rolling_dice function
 button = tkinter.Button(root, text='Roll the Dice', fg='blue', command=rolling_dice)
