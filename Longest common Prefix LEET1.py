@@ -1,13 +1,20 @@
 
 class solution:
+#Defineing Object with string strs
     def commonpref(strs):
-        if len(strs) == 0:
+#return no prefix if len(strs) is 0 
+        if len(strs) == 0:        
             return ''
+#return strs[0] as prefix since onely one character is specified
         if len(strs)== 1:
             return strs[0]
+#setting prefix is strs[0]
         pref = strs[0]
+#plen as length of prefix
         plen = len(pref)
+#iterating s from strs[1] since prefix is strs[0]     
         for s in strs[1:]:
+#loop when pref != s[0 to len(prefix)]
             while pref  != s[0:plen]:
                 pref = pref[0:(plen-1)]
                 plen = plen-1
